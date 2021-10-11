@@ -13,7 +13,7 @@ source:
     - setup.patch
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: True  # [win]
 
@@ -31,6 +31,7 @@ requirements:
 test:
   imports:
     - pynauty
+    - pynauty.graph
   commands:
     - pip check
   requires:
