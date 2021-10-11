@@ -31,7 +31,7 @@ index 6a147c3..03edf25 100644
 -                          nauty_dir + '/' + 'naurng.o',
 -                        ],
 -        include_dirs = [ nauty_dir, pynauty_dir ]
-+        extra_compile_args = [ '-O4', '-fPIC', '-lnauty' ],
++        extra_compile_args = [ '-O4', '-fPIC', '-L${PREFIX}/lib', '-lnauty', '-lnautyL', '-lnautyW'],
 +        # extra_objects = [ nauty_dir + '/' + 'nauty.o',
 +        #                   nauty_dir + '/' + 'nautil.o',
 +        #                   nauty_dir + '/' + 'naugraph.o',
