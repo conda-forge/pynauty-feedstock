@@ -21,10 +21,8 @@ requirements:
   host:
     - pip
     - python
-    - nauty =2.7.1
   run:
     - python
-    - {{ pin_compatible('nauty', max_pin='x.x.x') }}
 
 test:
   imports:
