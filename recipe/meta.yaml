@@ -1,5 +1,5 @@
 {% set name = "pynauty" %}
-{% set version = "1.0.2" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -8,14 +8,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynauty-{{ version }}.tar.gz
-  sha256: 771c6254fd89760ed5ad057676fbe59d9abb898352652e9774a0d43dd6c50096
+  sha256: 1b2800c64b659c66fefbcd55c26c653655c375179b12b1bb0f084998c5b5c59c
   patches:
     - setup.patch
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
@@ -42,7 +42,7 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: COPYING
-  summary: 'Isomorphism testing and automorphisms of graphs'
+  summary: Isomorphism testing and automorphisms of graphs
   description: |
     Pynauty can be used to compare graphs for isomorphism and to determine
     their automorphism group in a Python programming environment. Pynauty
@@ -50,7 +50,7 @@ about:
     package by Brendan McKay.
   doc_url: https://github.com/pdobsan/pynauty
   dev_url: https://github.com/pdobsan/pynauty
-  
+
 extra:
   recipe-maintainers:
     - jan-janssen
