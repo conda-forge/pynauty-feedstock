@@ -1,5 +1,5 @@
 {% set name = "pynauty" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynauty-{{ version }}.tar.gz
-  sha256: 960e013c00dd035eb3cf5bec56e1d6ec76a849f86e961b1fc8b6a6745ce2199e
+  sha256: fca00e50874b0cb34800f41b91b31f4b61a6ec22f2d3bd0b2290209b8d552307
   patches:
     - setup.patch
 
