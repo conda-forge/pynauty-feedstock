@@ -26,6 +26,7 @@ requirements:
   host:
     - pip
     - python
+    - setuptools
     - nauty =2.7.1
   run:
     - python
