@@ -7,13 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pynauty-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pynauty-{{ version }}.tar.gz
   sha256: 454d3b0e605d649d13478afb090daef4a152f15c4a337a391fe69fded7e683f2
   patches:
     - setup.patch
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
 
